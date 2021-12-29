@@ -85,9 +85,9 @@ impl Style {
 }
 
 /// The logger
-struct WasmLogger {
-    config: Config,
-    style: Style,
+pub struct WasmLogger {
+    pub config: Config,
+    pub style: Style,
 }
 
 impl Log for WasmLogger {
