@@ -59,18 +59,18 @@ impl Config {
 }
 
 /// The log styles
-struct Style {
-    lvl_trace: String,
-    lvl_debug: String,
-    lvl_info: String,
-    lvl_warn: String,
-    lvl_error: String,
-    tgt: String,
-    args: String,
+pub struct Style {
+    pub lvl_trace: String,
+    pub lvl_debug: String,
+    pub lvl_info: String,
+    pub lvl_warn: String,
+    pub lvl_error: String,
+    pub tgt: String,
+    pub args: String,
 }
 
 impl Style {
-    fn new() -> Style {
+    pub fn new() -> Style {
         let base = String::from("color: white; padding: 0 3px; background:");
         Style {
             lvl_trace: format!("{} gray;", base),
